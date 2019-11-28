@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chữ chạy</title>
+</head>
+<body>
+    <center><h1 id="text"> Chữ chạy </h1></center>
+    <script>
+            function doi_chu(){
+            var str = document.getElementById("text").innerHTML;
+            //lấy giữ liệu
+            //hàm substing(begin, end); trả về chuooci con từ begin đến end
+            //var str_sub1 = substring(str,0,1)cắt chuỗi str từ 0 đến 1
+            var str_sub1 = str.substring(0,1);
+            var str_sub2 = str.substring(1,str.length);
+            str = str_sub2 + str_sub1;
+            //alert(str);
+            document.getElementById("text").innerHTML = str;//đưa ra
+        }
+    setInterval(doi_chu,100);
+    </script>
+    
+</body>
+</html>
